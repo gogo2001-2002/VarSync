@@ -4,7 +4,7 @@ IP-Symcon-Modul zur Synchronisation von Variablen.
 
 ## Ausgangsstand
 
-Dieses Repository startet mit dem Modulstand aus `VarSync-v3.zip` (Bibliotheksversion 1.2, Build 3). Die Moduldateien liegen unter `VarSync/`.
+Dieses Repository startet mit dem Modulstand aus `VarSync-v3.zip` (Bibliotheksversion 1.2, Build 3). Die `library.json` liegt im Repository-Stammverzeichnis; die Moduldateien liegen im Verzeichnis `VarSyncModule/`.
 
 ## Funktionen
 
@@ -17,7 +17,7 @@ Dieses Repository startet mit dem Modulstand aus `VarSync-v3.zip` (Bibliotheksve
 
 ## Installation
 
-Das Verzeichnis `VarSync` in die gewünschte IP-Symcon-Modulquelle übernehmen und das Modul in IP-Symcon installieren.
+Das Repository in die gewünschte IP-Symcon-Modulquelle einbinden. Die `library.json` liegt im Stammverzeichnis; `VarSyncModule/` enthält die Moduldefinition, das Formular und den PHP-Code.
 
 ## Entwicklungsworkflow
 

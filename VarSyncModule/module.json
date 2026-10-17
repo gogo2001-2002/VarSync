@@ -1,0 +1,13 @@
+{
+    "id": "{3F7B9C21-6D4E-4A8B-8C2D-1E5F6A7B8C9D}",
+    "name": "VariableSync",
+    "type": 3,
+    "vendor": "",
+    "aliases": [
+        "Variablen Synchronisation"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "VSYNC"
+}
