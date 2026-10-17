@@ -1,0 +1,80 @@
+{
+    "elements": [
+        {
+            "type": "List",
+            "name": "SyncList",
+            "caption": "Synchronisations-Paare",
+            "rowCount": 10,
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "caption": "Aktiv",
+                    "name": "Active",
+                    "width": "65px",
+                    "add": true,
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                },
+                {
+                    "caption": "Variable A",
+                    "name": "VariableA",
+                    "width": "250px",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectVariable"
+                    }
+                },
+                {
+                    "caption": "Richtung",
+                    "name": "SyncDirection",
+                    "width": "180px",
+                    "add": 0,
+                    "edit": {
+                        "type": "Select",
+                        "options": [
+                            { "caption": "Bidirektional (A ↔ B)", "value": 0 },
+                            { "caption": "Unidirektional (A → B)", "value": 1 },
+                            { "caption": "Unidirektional (B → A)", "value": 2 }
+                        ]
+                    }
+                },
+                {
+                    "caption": "Variable B",
+                    "name": "VariableB",
+                    "width": "250px",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectVariable"
+                    }
+                },
+                {
+                    "caption": "RequestAction nutzen",
+                    "name": "UseRequestAction",
+                    "width": "160px",
+                    "add": true,
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                },
+                {
+                    "caption": "Beschreibung / Notiz",
+                    "name": "Description",
+                    "width": "auto",
+                    "add": "",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Button",
+            "caption": "Alle aktiven Paare jetzt synchronisieren (A → B / B → A gemäß Einstellung)",
+            "onClick": "VSYNC_SyncAll($id);"
+        }
+    ]
+}
