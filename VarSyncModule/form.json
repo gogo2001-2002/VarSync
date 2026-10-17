@@ -34,9 +34,18 @@
                     "edit": {
                         "type": "Select",
                         "options": [
-                            { "caption": "Bidirektional (A ↔ B)", "value": 0 },
-                            { "caption": "Unidirektional (A → B)", "value": 1 },
-                            { "caption": "Unidirektional (B → A)", "value": 2 }
+                            {
+                                "caption": "Bidirektional (A ↔ B)",
+                                "value": 0
+                            },
+                            {
+                                "caption": "Unidirektional (A → B)",
+                                "value": 1
+                            },
+                            {
+                                "caption": "Unidirektional (B → A)",
+                                "value": 2
+                            }
                         ]
                     }
                 },
@@ -68,6 +77,22 @@
                     }
                 }
             ]
+        },
+        {
+            "type": "Label",
+            "caption": "VarSync – Version 1.2 (Build 3)"
+        },
+        {
+            "type": "Label",
+            "caption": "Funktionen: Synchronisiert zwei IP-Symcon-Variablen bidirektional oder unidirektional (A → B bzw. B → A)."
+        },
+        {
+            "type": "Label",
+            "caption": "Automatische Synchronisation bei Wertänderungen; optional über RequestAction(). Manuelle Synchronisation aller aktiven Paare über die Schaltfläche oben."
+        },
+        {
+            "type": "Label",
+            "caption": "Unterschiedliche Variablentypen werden passend konvertiert. Bereits gleiche Zielwerte werden nicht erneut geschrieben, um unnötige Aktualisierungen und Rückkopplungen zu vermeiden."
         }
     ],
     "actions": [
